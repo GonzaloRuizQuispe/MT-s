@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Móvil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <div class="navbar">
+        <h1>Título para Móvil</h1>
+        <button class="login-button" onclick="showLogin()">Iniciar sesión</button>
+    </div>
+
+    <div class="content">
+        <h1>Bienvenido a la versión móvil</h1>
+    </div>
+
+    <!-- Contenido del login y registro en la misma página -->
+    <div id="login-container" class="modal-container" style="display: none;">
+        {% include 'login.html' %}
+    </div>
+
+    <div id="register-container" class="modal-container" style="display: none;">
+        {% include 'register.html' %}
+    </div>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>

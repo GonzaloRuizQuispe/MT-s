@@ -1,0 +1,13 @@
+<div id="login-container" class="login-container" onclick="event.stopPropagation()">
+    <h1>Iniciar Sesión</h1>
+    <form id="login-form" action="/submit-login" method="post">
+        <label for="username">Usuario</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Entrar</button>
+        <div class="register-text">
+            <p>No tienes cuenta? <a href="#" onclick="showRegister()">Regístrate</a></p>
+        </div>
+    </form>
+</div>
