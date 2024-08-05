@@ -8,9 +8,12 @@ function showLogin() {
 function showRegister() {
     document.getElementById('login-container').style.display = 'none';
     document.getElementById('register-container').style.display = 'block';
+    document.getElementById('overlay').style.display = 'flex';
 }
 
 function hideOverlay() {
+    document.getElementById('login-container').style.display = 'none';
+    document.getElementById('register-container').style.display = 'none';
     document.getElementById('overlay').style.display = 'none';
 }
 
