@@ -1,0 +1,10 @@
+# Ignorar el entorno virtual
+mts/
+
+# Archivos de configuración del sistema operativo
+.DS_Store
+*.swp
+
+# Archivos de compilación
+*.pyc
+__pycache__/
