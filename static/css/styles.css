@@ -1,10 +1,17 @@
 /* styles.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: url('/static/images/imagen-white.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh; /* Cambia a min-height para manejar contenido mayor */
     color: #000000;
 }
 
@@ -220,4 +227,42 @@ body {
         width: 95%;
         padding: 10px;
     }
+}
+
+.buttons-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px; /* Redondeo de los bordes */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado exacto en la pantalla */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre botones */
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin: 0; /* Elimina el margen adicional de los enlaces */
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }
