@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- Enlace al archivo CSS -->
 </head>
 <body>
-    <div class="overlay"></div> <!-- Capa de oscurecimiento del fondo -->
-    <div class="message">
-        Esta web no está disponible para PC, por favor acceda desde un dispositivo móvil.
+    <div class="overlay visible"> <!-- Capa de oscurecimiento del fondo -->
+        <div class="message">
+            Esta web no está disponible para PC, por favor acceda desde un dispositivo móvil.
+        </div>
     </div>
-
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script> <!-- Enlace al archivo JavaScript -->
 </body>
 </html>
