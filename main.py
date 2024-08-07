@@ -7,8 +7,8 @@ load_dotenv()
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('POSTGRES_URL')
-db = SQLAlchemy(app)
+""" app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('POSTGRES_URL')
+db = SQLAlchemy(app) """
 
 @app.route('/')
 def home():
