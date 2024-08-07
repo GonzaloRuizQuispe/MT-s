@@ -8,3 +8,6 @@ mts/
 # Archivos de compilación
 *.pyc
 __pycache__/
+
+# Ignorar el archivo .env
+.env
