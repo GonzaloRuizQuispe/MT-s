@@ -1,4 +1,4 @@
-import psycopg2,os
+""" import psycopg2,os
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -34,3 +34,4 @@ def connect_db():
 
 if __name__ == "__main__":
     connect_db()
+ """
