@@ -1,4 +1,4 @@
-""" import psycopg2,os
+import psycopg2,os
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -19,11 +19,11 @@ def connect_db():
         cur = conn.cursor()
         
         # Ejecutar una consulta de prueba
-        cur.execute("SELECT current_database();")
+        cur.execute("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';")
         
         # Obtener el resultado de la consulta
-        db_version = cur.fetchone()
-        print(f"Versión de la base de datos: {db_version[0]}")
+        db_version = cur.fetchall()
+        print(f"Versión de la base de datos: {db_version}")
         
         # Cerrar el cursor y la conexión
         cur.close()
@@ -34,4 +34,3 @@ def connect_db():
 
 if __name__ == "__main__":
     connect_db()
- """

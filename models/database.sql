@@ -8,7 +8,7 @@ CREATE TABLE user (
     username VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
-    rol VARCHAR(50) DEFAULT 'patient', -- patient,doctor,nurse,administrator,pharmacyOwner
+    membership VARCHAR(50) DEFAULT 'patient', -- patient,hospitals,pharmacies,administrators
     token_header VARCHAR(60) NOT NULL,
     token_access VARCHAR(30) NOT NULL,
     a2f BOOLEAN DEFAULT FALSE
